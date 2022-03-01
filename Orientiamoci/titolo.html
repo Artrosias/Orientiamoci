@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientiamoci | index</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)"href="css/mobile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <script src="main.js"></script> 
+</head>
+
+    
+        <body style="background-color: orange;">
+
+            <header>
+                <nav id="navbar">
+                    <div class="container">
+                                              <!-- Link interno -->
+                        <ul>
+                            <li> <a href="index.html">Accedi</a></li>
+                            <li> <a onclick="confirmBox()" >Esci</a></li>
+                        </ul>
+                    </div>
+                </nav>
+           </header>
+
+            <!-- Script per Box e uscita sicura-->
+<script> function confirmBox(){
+    if (confirm('Sei sicuro di voler lasciare Orientiamoci?')){
+      window.location.href = 'https://www.google.com/webhp?hl=it&sa=X&ved=0ahUKEwjSv83z8sbyAhVQPewKHX59AXUQPAgI'
+    }
+  } </script>
+  <!-- Fine script-->
+       
+        <div id="titolo">
+        <a><img src="./Img/logo_large.png" alt=""></a>
+    </div>
+    
+    <footer id="footer2">
+        <p> A cura di </p>
+        &#160;
+      <p> Alessio Guidotti, Luca Caliandro, Luca Carignano, Egidio Cantisani, Vincenzo Tagliente </p> 
+
+        &#160; 
+       <p> &copy; 2021, All rights reserved.  </p> 
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientiamoci | Scuola</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:500px)"href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+ <header>
+      <nav id="navbar">
+          <div class="container">
+                                    <!-- Link interno -->
+              <h1 class="logo"><a href="index.html">Orientiamoci</a></h1>
+              <ul>
+                  <li> <a class="" href="index.html">Home</a></li>
+                  <li> <a href="about.html">About</a></li>
+                  <li> <a href="contact.html">Contact</a></li>
+                  <li> <a onclick="confirmBox()" >Esci</a></li>
+              </ul>
+          </div>
+      </nav>
+ </header>
+ 
+ <!-- Script per Box e uscita sicura-->
+ <script> function confirmBox(){
+  if (confirm('Sei sicuro di voler lasciare Orientiamoci?')){
+    window.location.href = 'https://www.google.com/webhp?hl=it&sa=X&ved=0ahUKEwjSv83z8sbyAhVQPewKHX59AXUQPAgI'
+  }
+} </script>
+<!-- Fine script-->
+
+  
+ <section id="showcase-4">
+  <div class="container">
+    <h2> <span class="color-primary">Istituti superiori</span></h2>
+
+    <button class="accordion">Istituto Tecnico Tecnologico</button>
+    <div class="panel">
+       <CENTER> <P> Frequentando questo indirizzo è possibile acquisire le competenze necessarie per lavorare in imprese
+        specializzate nella produzione di software, nel dimensionamento ed esercizio dei sistemi di elaborazione
+        dati. <br> In particolare alla fine del corso di studi si è in grado di sviluppare software e progettare sistemi
+        industriali e di telecomunicazione. </P>   </CENTER>
+    </div>
+    
+    <button class="accordion">Liceo Classico</button>
+    <div class="panel">
+    <CENTER> <p>
+    Il Liceo fornisce ai suoi studenti gli strumenti culturali e metodologici per: <br>
+    <li> Promuovere la formazione di una personalità autonoma, creativa, critica <br> </li> 
+    <li> Consentire loro di comprendere in maniera approfondita la realtà, interpretandola  razionalmente e criticamente <br> </li>
+    <li> Cogliere le opportunità e le criticità del mondo reale con razionalità e progettualità <br> </li> 
+    <li> Sviluppare competenze adeguate al proseguimento degli studi universitari di qualunque tipo <br> </li>
+    </p></CENTER>
+    </div>
+    
+    <button class="accordion">Liceo Linguistico</button>
+    <div class="panel">
+     <CENTER> <p> Il	percorso	del	Liceo	Linguistico	è	indirizzato	allo	studio	di	più	sistemi	linguistici	e	culturali. 
+      Guida	lo	studente	ad	approfondire	e	a	sviluppare	le	conoscenze	e	le	abilità, <br> 	a	maturare	le	
+     competenze	 necessarie	 per	 acquisire	 la	 padronanza	 comunicativa	 di	 tre lingue,	 oltre	
+     l’italiano	e	per	comprendere	criticamente	l’identità	storica	e	culturale	di	tradizioni	e	civiltà	
+     diverse. </p> </CENTER> 
+    </div>
+    
+  </div>
+</section>
+ 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+<div  id="arrow">
+  <ul>
+    <a href="index.html"><li title="Vai indietro" class="prev"><span></span></li></a>  
+     <a href="universita.html"><li title=" Vai avanti"  class="next"><span></span></li></a> 
+  </ul>
+</div>
+
+    <!-- Footer -->
+    
+    <footer id="footer" >
+        <p>Orientiamoci &copy; 2021, All rights reserved </p>
+
+    </footer>
+
+ 
+    
+</body>
+</html>

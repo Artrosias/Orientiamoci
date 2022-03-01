@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientiamoci | Home</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:500px)"href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+ <header>
+      <nav id="navbar">
+          <div class="container">
+                                    <!-- Link interno -->
+              <h1 class="logo"><a href="index.html">Orientiamoci</a></h1>
+              <ul>
+                  <li> <a  class="current" href="index.html">Home</a></li>
+                  <li> <a href="about.html">About</a></li>
+                  <li> <a href="contact.html">Contact</a></li>
+                  <li> <a onclick="confirmBox()" >Esci</a></li>
+              </ul>
+          </div>
+      </nav>
+ </header>
+
+ <!-- Script per Box e uscita sicura-->
+<script> function confirmBox(){
+    if (confirm('Sei sicuro di voler lasciare Orientiamoci?')){
+      window.location.href = 'https://www.google.com/webhp?hl=it&sa=X&ved=0ahUKEwjSv83z8sbyAhVQPewKHX59AXUQPAgI'
+    }
+  } </script>
+  <!-- Fine script-->
+ 
+ <!-- Section 1 -->
+    <section id="showcase">
+        <div class="container">
+           <h1> <span class="color-primary">Il futuro inizia oggi, non domani.</span></h1>
+        </div>
+        <div  id="arrow">
+            <ul>
+              <a href="scuola.html"> <li title="Vai avanti" class="next"><span></span></li> </a> 
+                
+            </ul>
+        </div>
+            
+     
+    </section>
+    <!-- Secetion 2 -->
+    <section id="showcase-2" >
+        <div class="container">
+            <div class="image" >  
+                </div>
+             <div class="section-text" >
+                 <h1> Da cosa nasce <span class="color-primary" >Orientiamoci</span></h1>
+                <p class="text-center"> Orientiamoci nasce da un progetto universitario dalle giovani menti di Alessio Guidotti,Luca Caliandro e Gigi Cantisani.
+                Durante una riunione di gruppo si è deciso di creare una realtà che potesse essere utile a persone ancora indecise sul loro percorso di vita, poichè 
+                l'idea iniziale piacque al team di sviluppo essendo un pensiero condiviso da noi tutti.
+                  
+                    
+                </p>
+
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Section 3-->
+
+    <section id="showcase-3">
+        <div class="box box-white">
+           <a href="scuola.html"><i title="Scuola" class="fas fa-school fa-3x"></i></a> 
+        <h3>Grandi scuole</h3>
+        <p>Esplora i nostri corsi scolastici per iniziare alla grande.</p>
+        </div>
+        <div class="box box-orange ">
+           <a href="universita.html"><i title="Università" class="fas  fa-university fa-3x"></i></a> 
+            <h3> Scegli la tua università</h3>
+            <p>Sei in post diploma e non sai dove andare? Clicca qui.</p>
+        </div>
+        <div class="box box-white ">
+           <a  href="lavoro.html"><i title="Lavoro" class="fas fa-briefcase fa-3x"></i></a>
+           <h3>Il tuo futuro lavoro</h3>
+            <p>Sei in cerca di un lavoro? Ci pensiamo noi!</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    
+    <footer id="footer" >
+        <p>Orientiamoci &copy; 2021, All rights reserved </p>
+
+    </footer>
+
+ 
+    
+</body>
+</html>

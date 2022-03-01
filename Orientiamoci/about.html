@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientiamoci | About </title> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)"href="css/mobile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!--Nav Bar-->
+ <header>
+      <nav id="navbar">
+          <div class="container">
+                                    <!-- Link interno -->
+              <h1 class="logo"><a href="index.html">Orientiamoci</a></h1>
+              <ul>
+                  <li> <a href="index.html">Home</a></li>
+                  <li> <a class="current" href="about.html">About</a></li>
+                  <li> <a href="contact.html">Contact</a></li>
+                  <li> <a onclick="confirmBox()" >Esci</a></li>
+              </ul>
+          </div>
+      </nav>
+ </header>
+    
+ <!-- Script per Box e uscita sicura-->
+<script> function confirmBox(){
+    if (confirm('Sei sicuro di voler lasciare Orientiamoci?')){
+      window.location.href = 'https://www.google.com/webhp?hl=it&sa=X&ved=0ahUKEwjSv83z8sbyAhVQPewKHX59AXUQPAgI'
+    }
+  } </script>
+  <!-- Fine script-->
+
+    <!-- Section 1 -->
+    <section id="about-info">
+        <div class="container">
+            <div class="info-left">
+                <h1><span class="color-primary">About </span>Orientiamoci</h1>
+                <p> La webapp fornisce un quadro generale riguardo la scelta
+                    della professione e/o di eventuali corsi di studio, analizzando anche professioni meno
+                    conosciute, descrivendole ed esponendone il percorso di studio ed eventuali altre
+                    facoltà universitarie o corsi di formazione.
+                    Il suo obbiettivo è quello di aiutare gli utenti nel trovare il percorso giusto
+                        per arrivare all'ambito lavorativo desiderato eliminando eventuali dubbi fornendo
+                        informazioni specifiche su diverse scuole e università.
+                </p>
+
+                <div class="info-right">
+                    <img src=""alt=>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 2-->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Cosa dicono i nostri utenti</h2>
+            <div class="testimonial" >
+                <img src="Img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="persona1">
+                <p>
+                    Eccezionale, app web molto utile, intuitiva, semplice ed a portata di tutti.
+                    Mi è servita molto per poter conseguire un corso di laurea triennale d'informatica
+                    trovando in un solo sito tutte le informazioni a me utili (soprattutto lavorative) di Università di tutta Italia, devo dire che avete fatto Jackpot!
+
+                </p>
+            </div>
+            <div class="testimonial" >
+                <img src="Img/paul-hanaoka-hNQCPAz4ILU-unsplash.jpg" alt="persona2">
+                <p>
+                    Mmh che dire..il sito in se non è affatto male, l'ho trovato si utile ma al quanto riduttivo,
+                    ma immagino che sarà un bel progetto da portare avanti, ho trovato informazioni utili in solo sito senza spostarmi
+                    da app web ad app web, continuate cosi!
+
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+      
+ 
+    <!-- Footer -->
+    
+    <footer id="footer" >
+        <p>Orientiamoci &copy; 2021, All right reserved </p>
+
+    </footer>
+
+ 
+    
+</body>
+</html>

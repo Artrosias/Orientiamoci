@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+/*Utility*/
+.btn {                       /*Bottone*/
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background: #333;
+    padding: 13px 18px;
+    border: none;
+    } 
+    .btn-light {
+        background: white;  
+        color: #333;
+    }
+    .text-center {
+        text-align: center;
+         }
+.btn:hover {
+    background: orange;
+    color: #333;
+}
+                        /*Accordion*/
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block !important;
+}
+
+/*Arrow*/
+
+#arrow ul {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#arrow ul li{
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background: #262626;
+    margin: 0 10px ;
+    border-radius: 50%;
+    transition: .5s;
+   
+    
+}
+#arrow ul li:hover {
+    background: #0070ff;
+}
+#arrow ul li span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff ;
+    transition: .5s;
+}
+
+#arrow ul li.next span{
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+}
+#arrow ul li.next:hover span{
+    right: 16%;
+}
+#arrow ul li.next span:before {
+content: '';
+position: absolute;
+width: 38px;
+height: 4px;
+background: #fff;
+transform-origin: right;
+transform: rotate(45deg) translate(0px,25px) scaleX(0);
+transition: .5s;
+
+}
+#arrow ul li.next:hover span:before {
+   
+    transform: rotate(45deg) translate(0px,25px) scaleX(1);
+    
+    }
+    #arrow ul li.prev span{
+        top: 50%;
+        left: 20%;
+        transform: translateY(-50%) rotate(-45deg);
+        border-right: none;
+        border-bottom: none;
+    }
+    #arrow ul li.prev:hover span{
+        right: 16%;
+    }
+    #arrow ul li.prev span:before 
+    {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background: #fff;
+    transform-origin: left;
+    transform: rotate(45deg) translate(-2px,-1px) scaleX(0);
+    transition: .5s;
+    
+    }
+    #arrow ul li.prev:hover span:before 
+    {
+       
+        transform: rotate(45deg) translate(-2px,-1px) scaleX(1);
+    }
+    
+
+/*Header*/
+#navbar {
+    background: #333;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container ul {
+    display: flex;
+    padding-right: 1rem;
+}
+#navbar .container ul li {
+    list-style: none;
+}
+#navbar .container ul li a{
+    padding: 20px;
+    display: block;
+}
+
+
+#navbar .container h1 {
+    text-transform: uppercase; /*Rende automaticamente le lettere in maiuscolo*/
+    padding-left: 1rem;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #555;
+    color: orange;
+    
+}
+
+/*Section*/
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background: url(../Img/mche-lee-PC91Jm1DlWA-unsplash.jpg) no-repeat center center/cover;                                                                             
+    justify-content: center;
+    align-items: center;
+
+}
+#showcase .container h1 {
+    color: #000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+#showcase .container p {
+    color:#fff;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+.color-primary {
+    color: orange;
+}
+/*Section 2*/
+#showcase-2 .container {
+    display: flex;
+    height: 500px;
+}
+#showcase-2 .container .image {
+    background: url(../Img/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg) no-repeat center center/cover ;
+    flex: 1;
+}
+#showcase-2 .container .section-text {
+    display: flex;
+    flex: 1;
+    background: #333;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+    color: #fff;
+}
+#showcase-2 .container .section-text h1 {
+        padding-bottom: 20px;
+}
+#showcase-2 .container .section-text p {
+    padding-bottom: 20px;
+}
+ 
+/*Section 3*/
+#showcase-3 {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  }
+  .box-white  {
+      background: #fff
+  }
+.box-orange {
+    background: orange;
+
+}
+ .box {
+     flex: 1;
+     padding: 100px  0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ #showcase-3 i{
+     padding-bottom: 20px;
+     color: #000;
+}
+#showcase-3 i:hover{
+    color: gray;
+}
+
+#showcase-3 h3 {
+    padding-bottom: 30px;
+    color: #000;
+}
+
+/*Section 4*/
+#showcase-4 .container {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;                                                                           
+    justify-content: center;
+    align-items: center;
+
+}
+#showcase-4.container h2 {
+    color: #000;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+#showcase-4.container p {
+    color:#fff;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+.color-primary {
+    color: orange;
+}
+
+
+/* Footer */
+#footer {
+    background: #333;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+/* About info*/
+
+#about-info .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 ;
+}
+
+#about-info img {
+    width: 50%;
+    border-radius: 50%;
+    margin:auto;
+    
+    
+}
+
+
+#about-info .info-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding: 3rem;
+}
+#about-info .info-left p {
+    width: 80%;
+    padding-bottom: 1.5rem;
+}
+
+#about-info .info-left h1 {
+    font: size 2rem;
+    padding-bottom: 1.5rem;
+
+}
+
+#about-info .info-right {
+     flex:1;
+     display: flex;
+     
+ }
+
+ /* Testimonials */
+ #testimonials {
+     height: 500px;
+     padding-top: 100px;
+     background: url() no-repeat center center/cover
+ }
+
+ #testimonials .testimonial img{
+     width: 100px;
+     border-radius: 10%;
+
+ }
+ #testimonials h2 {
+     color: orange;
+     text-align: center;
+     padding-bottom: 3rem;
+     font-size: 2.5rem;
+}
+#testimonials p {
+    width: 80%;
+}
+ #testimonials .testimonial {
+     padding: 1.2rem;
+     margin-bottom: 3rem;
+     border-radius: 5px;
+     opacity: 0.9;
+     background: orange;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ /* Contact */
+ #contact-form {
+     padding: 2rem 5rem;
+ }
+ #contact-form h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+ #contact-form p {
+     padding-bottom: 1rem;
+ }
+ #contact-form button {
+margin-top: 1rem;
+}
+
+
+
+ #contact-form .form-group {
+     margin-bottom: 20px;
+ }
+
+
+ #contact-form input,
+ #contact-form textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #dddddd ;
+ }
+
+ #contact-form label {
+     margin-bottom: 5px;
+     display: block;
+ }
+
+ #contact-form textarea {
+     height: 180px;
+ }
+ #contact-form input:focus,
+ #contact-form textarea:focus {
+     outline: none;
+     border-color: orange
+ }
+
+
+ /* Contact info*/
+
+ #contact-info .container {
+     display: flex;
+     justify-content: space-evenly;
+     height: 200px;
+     background: #222;
+     color: #fff;
+     align-items: center;
+     text-align: center;
+ }
+
+ #contact-info  i,
+ #contact-info h3{
+     margin-bottom: 1rem;
+ }
+
+ #titolo img{
+    width: 900px;
+    top: 0;
+    content:"" ;
+    display:block;
+    align-items: center;
+    margin: 0px auto;
+    margin-right: 21% ;
+}
+
+#footer2{
+    padding: 40px;
+    color: #333 ;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-right: 20%;
+     
+}
+
+
+::selection {
+    color: #000000;
+    background-color: orange;
+}
+
+/* for firefox */
+::moz-selection {
+    color: #000000;
+    background-color: orange;
+}

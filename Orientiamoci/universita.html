@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientiamoci | Università</title> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (max-width:500px)"href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--Nav Bar-->
+ <header>
+      <nav id="navbar">
+          <div class="container">
+                                    <!-- Link interno -->
+              <h1 class="logo"><a href="index.html">Orientiamoci</a></h1>
+              <ul>
+                  <li> <a class="" href="index.html">Home</a></li>
+                  <li> <a href="about.html">About</a></li>
+                  <li> <a href="contact.html">Contact</a></li>
+                  <li> <a onclick="confirmBox()" >Esci</a></li>
+              </ul>
+          </div>
+      </nav>
+ </header>
+
+  <!-- Script per Box e uscita sicura-->
+<script> function confirmBox(){
+  if (confirm('Sei sicuro di voler lasciare Orientiamoci?')){
+    window.location.href = 'https://www.google.com/webhp?hl=it&sa=X&ved=0ahUKEwjSv83z8sbyAhVQPewKHX59AXUQPAgI'
+  }
+} </script>
+<!-- Fine script-->
+  
+ <section id="showcase-4">
+  <div class="container">
+    <h2> <span class="color-primary">Corsi di Laurea </span></h2>
+
+    <button class="accordion">Informatica e comunicazione digitale - sede di Taranto</button>
+    <div class="panel">
+     <CENTER> <p>Il Corso di Laurea in ICD è volto a formare esperti in grado di costruire soluzioni a problemi della
+      società utilizzando la tecnologia informatica disponibile. I contenuti forniti nel corso di studio in ICD
+      vanno dai fondamenti teorici della programmazione, <br> dei linguaggi e dell'algoritmica, della
+      computabilità e della complessità, ai metodi per applicazioni multimediali mirati ad una vasta
+      gamma di domini di applicazione e in particolare ai settori dell’editoria, della televisione, della
+      pubblicità, della comunicazione di aziende del commercio elettronico e della formazione digitale. Le
+      conoscenze tecniche includono discipline informatiche particolarmente attuali e richieste dal
+      mondo del lavoro, inerenti gli Algoritmi e le strutture di Dati, le Basi di Dati, l'Ingegneria del
+      Software, le Reti di Calcolatori e i Linguaggi di Programmazione. </p> </CENTER> 
+    </div>
+    
+    <button class="accordion">Corso di Laurea in Lettere</button>
+    <div class="panel">
+     <CENTER>  <p>  Il Corso di Laurea triennale in Lettere si propone di fornire agli studenti, attraverso
+      lo studio e l'analisi di testi e documenti della cultura antica e moderna, competenze
+      specifiche nell'ambito della lingua italiana e della cultura europea. I laureati sono in
+      grado di collocare testi e documenti nel loro contesto, di individuarne i mezzi di
+      diffusione, riconoscendone le forme, i codici utilizzati, i generi letterari, nonché di
+      analizzare singoli fenomeni culturali in relazione alla storia politica e all'evoluzione
+      della mentalità e delle idee. Possiedono inoltre le abilità linguistiche necessarie
+      all'elaborazione di testi di carattere divulgativo e alla verifica della correttezza e
+      della efficacia della comunicazione scritta, e le competenze di base nell'uso delle
+      tecnologie informatiche e telematiche applicate alle discipline umanistiche. </p> </CENTER>
+      
+    </div>
+    
+    <button class="accordion">Corso in Lingue, Culture e Letterature Moderne</button>
+    <div class="panel">
+    <CENTER> <p> La laurea in “Lingue, Culture e Letterature Moderne” fornisce competenze teoriche,
+      metodologiche e applicative nelle aree delle lingue, culture e letterature e straniere moderne, oltre
+      che competenze relative alla lingua, letteratura e cultura italiana. Il laureato in “Lingue, Culture e
+      Letterature Moderne” possiede una padronanza scritta e orale di due lingue straniere, nonché del
+      patrimonio letterario e culturale legato alle due lingue e conoscenze di base nell’ambito della
+      glottodidattica e della didattica delle lingue straniere, delle filologie delle lingue studiate e
+      nell’ambito di discipline artistico-letterarie e storico-filosofiche. </p> </CENTER>  
+    </div>
+    
+  </div>
+</section>
+ 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+    <!-- Footer -->
+    
+    <footer id="footer" >
+        <p>Orientiamoci &copy; 2021, All rights reserved </p>
+
+    </footer>
+
+    <div  id="arrow">
+      <ul>
+        <a href="scuola.html"><li title="Vai indietro"  class="prev"><span></span></li></a>  
+        <a href="lavoro.html"><li title=" Vai avanti"  class="next"><span></span></li></a> 
+      </ul>
+  </div>
+    
+</body>
+</html>
